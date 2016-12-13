@@ -21,19 +21,19 @@ samplesites = np.genfromtxt("coordinates.csv",
 x, y = mymap(samplesites['lon'], samplesites['lat'])
 mymap.plot(x, y, 
             'o',color='#FF4000',markersize=8, label= "Sample Sites")   
+
 #https://github.com/matplotlib/matplotlib/blob/master/lib/matplotlib/legend.py 
 plt.legend(loc= 2, numpoints= 1)  
-#drawmapscale takes atleast the location where you want the scalebar, the location it is measuring, and the length of the scalebar
-#    default length is km
+
+#drawmapscale takes atleast the location where you want the scalebar, the location it is measuring, and the length of the scalebar #default length is km
 mymap.drawmapscale( -83.872787, 34.167158,-83.768442, 34.195325,5, barstyle= 'fancy', units="mi")
 
 plt.title('Lake Lanier Chlorophyll-a Monitoring', fontsize= 16, weight= 'bold')
 plt.savefig('c:/Users/kayla/Desktop/pythonproject/nolabels.tif')
 plt.clf()
-![nolabels](https://cloud.githubusercontent.com/assets/22508936/21123069/6790c0e0-c0a4-11e6-8c26-0845eb86b17a.png)
 
 
-#html color cordes
+#html color codes
 # http://html-color-codes.info/color-names/
 #Line and Marker Styles:
 #    http://matplotlib.org/1.5.3/api/pyplot_api.html#matplotlib.pyplot.plot
@@ -142,9 +142,6 @@ plt.legend(loc= 2, numpoints= 1)
 mymap.drawmapscale( -83.872787, 34.167158,-83.768442, 34.195325,5, barstyle= 'fancy', units="mi")
 ##https://github.com/matplotlib/matplotlib/blob/master/lib/matplotlib/legend.py 
 plt.legend(loc= 2, numpoints= 1)  
-#drawmapscale takes atleast the location where you want the scalebar, the location it is measuring, and the length of the scalebar
-#    default length is km
-mymap.drawmapscale( -83.872787, 34.167158,-83.768442, 34.195325,5, barstyle= 'fancy', units="mi")
 plt.title('Lake Lanier Chlorophyll-a Monitoring', fontsize= 16, weight= 'bold')
 ####http://basemaptutorial.readthedocs.io/en/latest/locator.html
 littleriverlat= 34.3537
@@ -221,8 +218,7 @@ plt.savefig('c:/Users/kayla/Desktop/pythonproject/littleriverembayment2.tif',
 #BolingBridgelat= 34.3125
 #BolingBridgelon= -83.9500
 #x6,y6 = mymap(BolingBridgelon, BolingBridgelat)     
-#plt.annotate('Boling Bridge',xy=(x6,y6),fontsize=8, textcoords= 'data',
-# horizontalalignment='left')
+#plt.annotate('Boling Bridge',xy=(x6,y6),fontsize=8, textcoords= 'data')
 #
 #flatcreeklat= 34.2616
 #flatcreeklon= -83.9164
