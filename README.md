@@ -30,6 +30,8 @@ mymap.drawmapscale( -83.872787, 34.167158,-83.768442, 34.195325,5, barstyle= 'fa
 plt.title('Lake Lanier Chlorophyll-a Monitoring', fontsize= 16, weight= 'bold')
 plt.savefig('c:/Users/kayla/Desktop/pythonproject/nolabels.tif')
 plt.clf()
+![nolabels](https://cloud.githubusercontent.com/assets/22508936/21123069/6790c0e0-c0a4-11e6-8c26-0845eb86b17a.png)
+
 
 #html color cordes
 # http://html-color-codes.info/color-names/
